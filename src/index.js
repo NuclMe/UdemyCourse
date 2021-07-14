@@ -24,7 +24,11 @@ const Btn = () =>{
     return 'Log in, please'
   }
   const p = <p>Log in</p>
-  return <button> {res()}</button>
+  const logged = false
+  const styled = {
+    width: '300px'
+  }
+  return <button style={styled}> {logged ? 'true': p}</button>
 
 }
 const App = () =>{
