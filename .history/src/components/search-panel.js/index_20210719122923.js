@@ -1,0 +1,1 @@
+import searchPanel from "./search-panel";

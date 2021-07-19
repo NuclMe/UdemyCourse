@@ -41,5 +41,5 @@ import App from "./components/app"
 //         </>
 //     )
 // }
-ReactDOM.render(<App/>,document.getElementById("root"))
+ReactDOM.render(<All/>,document.getElementById("root"))
 

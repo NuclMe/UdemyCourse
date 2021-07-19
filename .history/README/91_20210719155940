@@ -1,0 +1,29 @@
+1) Props - обьект, который есть в каждом компоненте
+2) Пропсы менять нельзя они идут только на чтение
+3) Пропсы без деструктуризации
+    function WhoAmI(props){
+        return (
+            <React.Fragment>
+                <h1>My name is {props.name} and my surname is {props.surname}</h1>
+                <a href={props.link}> My Profile</a>
+            </React.Fragment>
+        )
+    }
+    ReactDOM.render(<WhoAmI name = 'Jonh' surname = 'Pamel' link='facebook.com'/>,document.getElementById("root"))
+
+4) Пропсы с деструктуризацией 
+function WhoAmI({name,surname,link}){
+    return (
+        <React.Fragment>
+            <h1>My name is {name} and my surname is {surname}</h1>
+            <a href={link}> My Profile</a>
+        </React.Fragment>
+    )
+}
+ReactDOM.render(<WhoAmI name = 'Jonh' surname = 'Pamel' link='facebook.com'/>,document.getElementById("root"))
+5) setState выполняется ассинхронно
+
+6) 
+    a) Стейт можно привязать через декораторы (bind,call,apply) 
+    b) через стрелочную функцию, она будет брать this каждый раз от родителя
+    c) 

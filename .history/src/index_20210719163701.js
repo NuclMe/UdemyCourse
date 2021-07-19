@@ -1,7 +1,7 @@
 import React,{Component} from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
-import App from "./components/app"
+// import App from "./components/app"
 
 // class WhoAmI extends Component{
 //     constructor(props){
@@ -41,5 +41,5 @@ import App from "./components/app"
 //         </>
 //     )
 // }
-ReactDOM.render(<App/>,document.getElementById("root"))
+ReactDOM.render(<All/>,document.getElementById("root"))
 
