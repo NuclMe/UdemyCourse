@@ -4,22 +4,19 @@ import './post-list.css'
 const  PostList = ({posts}) => {
     const elements = posts.map((item) =>{
         return (
-            <li key={item.id} className='list-group-item'>
+            <li className='list-group-item'>
             <PostListItem 
             label={item.label} 
             important={item.important} /> 
-            {/* или можно записать через spread оператор 
-            <PostListItem {...item}>
-            </>
-            будет такой же обьект 
-            */}
 
             </li>
         )
     })
     return (
         <ul className='app-list list-group'>
-           {elements}
+            <PostListItem label={posts[0].label} important={posts[0].label} /> 
+            {/* <PostListItem label='Watch JS' /> 
+            <PostListItem label='I am  React' />  */}
         </ul>
     );
 }

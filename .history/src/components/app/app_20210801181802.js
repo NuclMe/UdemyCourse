@@ -8,8 +8,8 @@ import './app.css';
 const App =  () => {
   const data = [
     {label: 'Going to watch TV',important:false, id: 'qw'},
-    {label: 'Watch JS',important:false, id:'qwq'},
-    {label: 'I am  React',important:false, id:'qwqe'}
+    {label: 'Watch JS',important:false, id:'qw'},
+    {label: 'I am  React',important:false}
   ]
   return (
     <div className="app">

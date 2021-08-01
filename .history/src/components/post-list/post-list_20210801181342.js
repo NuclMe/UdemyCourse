@@ -4,14 +4,13 @@ import './post-list.css'
 const  PostList = ({posts}) => {
     const elements = posts.map((item) =>{
         return (
-            <li key={item.id} className='list-group-item'>
+            <li className='list-group-item'>
             <PostListItem 
             label={item.label} 
             important={item.important} /> 
             {/* или можно записать через spread оператор 
             <PostListItem {...item}>
             </>
-            будет такой же обьект 
             */}
 
             </li>
